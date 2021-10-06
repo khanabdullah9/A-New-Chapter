@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="A_New_Chapter.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>A New Chapter</title>
+    <%--bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables css--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+     <%--fontawesome css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+ 
+        <%--our custom css--%>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link href="StyleSheet2.css" rel="stylesheet" />
+
+
+    <%--jquery--%>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <%--popper js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%--bootstrap js--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!--Data Tables JS-->
+    <script src="Datatables/JS/jquery.dataTables.min.js"></script>
+    <%--bootstrap icon cdn--%>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .new-navbar-text {
+            font-family:Gabriola;
+            font-size:1.5em;
+            color:white;
+}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <div id="navbar1" runat="server" style="">
+            <nav class="navbar navbar-expand-sm" style="background-color: #e3f2fd;background:none">
+                <asp:Button class="btn btn-default new-navbar-text" style="font-size:2em;font-family:Brush Script MT, Brush Script Std, cursive;" ID="Button1" runat="server" Text="A New Chapter" />
+                <button class="navbar-toggler navbar-light"  style="color:#e3f2fd;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedControls" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li>
+                            <asp:HyperLink class="nav-link new-navbar-text"  ID="HyperLink1" runat="server" NavigateUrl="~/AuthorProfilePage.aspx" ><i class="bi bi-search"></i>Author</asp:HyperLink>                            
+                        </li>
+                        <li>
+                            <asp:LinkButton class="nav-link  new-navbar-text"  ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Bookstore</asp:LinkButton>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        
+                        <li>
+                            <div class="dropdown ">
+                                <button class="btn  dropdown-toggle" style="color:white;font-family:Gabriola;font-size:1.4em;margin-top:px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" runat="server">
+                                    Login
+                                </button>
+                                <div class="btn-default">
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+                                    <a id="user_login_anchor"  class="dropdown-item nav-link-font" href="UserLoginPage.aspx" runat="server">User Login</a>
+                                    <a id="author_login_anchor" class="dropdown-item nav-link-font" href="AuthorLoginPage.aspx" runat="server">Author Login</a>
+                                    <%--<a id="admin_login_anchor" class="dropdown-item nav-link-font" href="AdminLoginPage.aspx" runat="server">Admin Login</a>--%>
+                                </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <asp:LinkButton class="nav-link new-navbar-text" ID="LinkButton11" runat="server" OnClick="LinkButton11_Click">Book Shelf</asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton class="nav-link new-navbar-text" ID="LinkButton8" runat="server" OnClick="LinkButton8_Click" ><i class="bi bi-cart"></i>Your Cart</asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton class="nav-link new-navbar-text" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Sign Up</asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton class="nav-link new-navbar-text" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click"><i class="bi bi-cloud-arrow-up"></i>Upload</asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton class="nav-link new-navbar-text" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Logout</asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </nav> 
+                </div>
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <%--this is where content will be added--%>
+            </asp:ContentPlaceHolder>
+            <footer>
+                <div id="footer1" runat="server" class=" container-fluid" style="padding-top:20px">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 text-center ">
+                            <asp:LinkButton class="nav-link "  ID="LinkButton5" runat="server" OnClick="LinkButton5_Click">Admin Login</asp:LinkButton>
+                            <asp:LinkButton class="nav-link " ID="LinkButton6" runat="server" OnClick="LinkButton6_Click" style="display:inline">Member Management</asp:LinkButton>
+                            <asp:LinkButton class="nav-link " ID="LinkButton7" runat="server" OnClick="LinkButton7_Click" style="display:inline">Author Management</asp:LinkButton>
+                            <asp:LinkButton class="nav-link " ID="LinkButton9" runat="server" OnClick="LinkButton9_Click" style="display:inline">Book Review</asp:LinkButton>
+                            <asp:LinkButton class="nav-link " ID="LinkButton10" runat="server" OnClick="LinkButton10_Click" style="display:inline">Book Inventory</asp:LinkButton>
+                            <asp:LinkButton lass="nav-link " ID="LinkButton12" runat="server" OnClick="LinkButton12_Click">Unpaid Authors</asp:LinkButton>
+                            <%--<p style="display:inline-block;font-family:Brush Script MT, Brush Script Std, cursive;color:#0047ff;font-size:larger;">&copy A new Chapter</p>--%>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

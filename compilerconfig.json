@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "SASS.css",
+    "inputFile": "SASS.scss"
+  },
+  {
+    "outputFile": "my_scss.css",
+    "inputFile": "my_scss.scss"
+  }
+]

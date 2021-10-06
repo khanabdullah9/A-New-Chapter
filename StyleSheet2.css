@@ -1,0 +1,105 @@
+﻿header {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)), url("images/bookstore.jpg");*/
+    background-image: url('images/bookstore.jpg');
+    /*background-image: url('images/home_bg.jpg');*/
+    height: 100vh;
+    /*-webkkit-background-size: cover;*/
+    background-size: cover;
+    background-position: center center;
+    margin-left: -22px;
+    margin-right: -22px;
+    margin-bottom: -1000px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top:300px;
+}
+
+.navbar-brand {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: xx-large
+}
+
+.banner-text {
+    font-family: poppins;
+    font-size: larger;
+    color: black;
+}
+
+.banner-btn {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 50px;
+    display: inline-block;
+    margin-top: 300px;
+    color: #fff;
+
+}
+.text-area {
+    margin-top: -550px;
+    margin-right: -800px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 30px;
+}
+.my-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), url('images/home_bg.jpg');
+    background-image: url('images/paypalcheckout.jpg');
+    height: 100vh;
+    /*-webkkit-background-size: cover;*/
+    background-size: cover;
+    background-position: center center;
+}
+.bg-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.2)),url('images/book_shelf.jpg');
+    /*background-image: url('images/book_shelf.jpg');*/
+    height: 100vh;
+    -webkkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: -3000px;
+}
+.navbar-default {
+    background:none;
+}
+.book-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.2)), url('images/bookstore.jpg');
+    height: 100vh;
+    -webkkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.navbar-bg-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.2)), url('images/home_bg.jpg');
+}
+.bookstore-title-text {
+    font-family: Impact, fantasy;
+    color: lightcoral;
+}
+.bookstore-content-text {
+    font-family: fantasy;
+    color: cadetblue;
+    /*font-size:2em;*/
+}
+.nav-link-font {
+    font-family: Gabriola;
+    font-size: 1.4em;
+}
+.nav-link-font-hp {
+    font-family: Gabriola;
+    font-size: 1.4em;
+    color:white;
+}
+.login-img {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.2)), url('images/signup.jpg');*/
+    background-image: url('images/signup.jpg');
+    height:100vh;
+}
+
+
