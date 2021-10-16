@@ -33,13 +33,13 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     Book File<p style="color:red;display:inline">*</p>
-                                <asp:FileUpload ID="FileUpload2" runat="server" tooltip="Valid file extention: .doc,.docx..pdf,.txt,.rtf | Valid file size: (2MB)"/>
+                                <asp:FileUpload ID="FileUpload2" runat="server" tooltip="Valid file extention: .txt | Valid file size: (max 2MB)"/>
                                     <asp:RequiredFieldValidator ForeColor="Red" ID="RequiredFieldValidator1" runat="server" ErrorMessage="A book without content?" ControlToValidate="FileUpload2"></asp:RequiredFieldValidator>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 Book Image<p style="color:red;display:inline">*</p>
-                                <asp:FileUpload ID="FileUpload1" runat="server" tooltip="Valid file extention: .jpg,.png,.bmp | Valid file size: (2MB)"/>
+                                <asp:FileUpload ID="FileUpload1" runat="server" tooltip="Valid file extention: .jpg,.png,.bmp | Valid file size: (max 2MB)"/>
                                     <asp:RequiredFieldValidator ForeColor="Red" ID="RequiredFieldValidator2" runat="server" ErrorMessage="A book must have an attractive image" ControlToValidate="FileUpload1"></asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-4">

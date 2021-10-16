@@ -130,7 +130,7 @@ namespace A_New_Chapter
                     if (FileUpload1.HasFile && FileUpload2.HasFile)
                     {
                         if ((fileExtention1.ToLower() == ".jpg" || fileExtention1.ToLower() == ".png" || fileExtention1.ToLower() == ".bmp" || fileExtention1.ToLower() == ".jpeg") &&
-                            (fileExtention2.ToLower() == ".txt" || fileExtention2.ToLower() == ".doc" || fileExtention2.ToLower() == ".docx" || fileExtention2.ToLower() == ".pdf" || fileExtention2.ToLower() == ".rtf")
+                            (fileExtention2.ToLower() == ".txt")
                             && (fileSize1<= 2097152 && fileSize2<= 2097152))//max 2mb
                         {
                             //converting to binary stream

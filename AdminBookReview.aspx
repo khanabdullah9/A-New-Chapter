@@ -76,11 +76,15 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="row">
-                                                                        <div class="col-lg-6">
+                                                                        <div class="col-lg-4">
                                                                             Genre:
                                                                             <asp:Label class="author-content-text" ID="Label2" runat="server" Text='<%# Eval("book_genre") %>'></asp:Label>
                                                                         </div>
-                                                                        <div class="col-lg-6">
+                                                                        <div class="col-lg-4">
+                                                                            Uploaded by:
+                                                                            <asp:Label class="author-content-text" ID="Label5" runat="server" Text='<%# Eval("author_name") %>'></asp:Label>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
                                                                             Price($):
                                                                             <asp:Label class="author-content-text" ID="Label3" runat="server" Text='<%# Eval("book_price") %>'></asp:Label>
                                                                         </div>
