@@ -66,9 +66,10 @@ namespace A_New_Chapter
             }
             catch (Exception ex)
             {
-                Logger.Log(ex, EventLogEntryType.Warning);
-                Server.ClearError();
-                Server.Transfer("~/Errors.aspx");
+                //Logger.Log(ex, EventLogEntryType.Warning);
+                //Server.ClearError();
+                //Server.Transfer("~/Errors.aspx");
+                Response.Write("<script>alert('"+ex.Message+"')</script>");
             }
 }
         protected bool isUserPresent() 
@@ -96,6 +97,7 @@ namespace A_New_Chapter
                 Logger.Log(ex, EventLogEntryType.Warning);
                 Server.ClearError();
                 Server.Transfer("~/Errors.aspx");
+                Response.Write("<script>alert('" + ex.Message + "')</script>");
             }
             return false;
         }

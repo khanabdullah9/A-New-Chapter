@@ -145,7 +145,7 @@ namespace A_New_Chapter
                                 Value = -1,
                                 Direction = ParameterDirection.Output
                             };
-                            cmd.Parameters.Add(NewId);
+                            //cmd.Parameters.Add(NewId);
 
                             SqlParameter reputation_points = new SqlParameter()
                             {

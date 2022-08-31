@@ -95,7 +95,7 @@
                         <div class="row">
                             <div class="col">
                                 <center>
-                                <asp:Label ID="Label1" runat="server" Text="Your book has been uploaded successfully, a team of professional is reviewing your content.<br/>Your book will be added within 48 hours.<br/>If your book is not available on the bookstore page contact us at anewchapter96@gmail.com" ForeColor="Blue"></asp:Label>
+                                <asp:Label ID="Label1" runat="server" Text="Your book has been uploaded successfully, a team of professionals is reviewing your content.<br/>Your book will be added within 48 hours.<br/>If your book is not available on the bookstore page contact us at anewchapter96@gmail.com" ForeColor="Blue"></asp:Label>
                             </center>
                                     </div>
                         </div>

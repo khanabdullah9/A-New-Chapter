@@ -179,3 +179,25 @@ C:\Users\Rashid Khan\source\repos\practs\A New Chapter\A New Chapter\bin\Newtons
 C:\Users\Rashid Khan\source\repos\practs\A New Chapter\A New Chapter\bin\PayPal.dll
 C:\Users\Rashid Khan\source\repos\practs\A New Chapter\A New Chapter\bin\Newtonsoft.Json.xml
 C:\Users\Rashid Khan\source\repos\practs\A New Chapter\A New Chapter\bin\PayPal.xml
+E:\A_New_Chapter\A-New-Chapter\obj\Debug\A New Chapter.dll
+E:\A_New_Chapter\A-New-Chapter\obj\Debug\A New Chapter.pdb
+E:\A_New_Chapter\A-New-Chapter\bin\A New Chapter.dll.config
+E:\A_New_Chapter\A-New-Chapter\bin\A New Chapter.dll
+E:\A_New_Chapter\A-New-Chapter\bin\A New Chapter.pdb
+E:\A_New_Chapter\A-New-Chapter\bin\Newtonsoft.Json.xml
+E:\A_New_Chapter\A-New-Chapter\bin\PayPal.xml
+E:\A_New_Chapter\A-New-Chapter\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\A_New_Chapter\A-New-Chapter\obj\Debug\A New Chapter.csproj.AssemblyReference.cache
+E:\A_New_Chapter\A-New-Chapter\obj\Debug\A New Chapter.csproj.CoreCompileInputs.cache
+E:\A_New_Chapter\A-New-Chapter\obj\Debug\A New Chapter.csproj.CopyComplete
+E:\A-New-Chapter\bin\A New Chapter.dll.config
+E:\A-New-Chapter\bin\A New Chapter.dll
+E:\A-New-Chapter\bin\A New Chapter.pdb
+E:\A-New-Chapter\bin\Newtonsoft.Json.xml
+E:\A-New-Chapter\bin\PayPal.xml
+E:\A-New-Chapter\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\A-New-Chapter\obj\Debug\A New Chapter.csproj.AssemblyReference.cache
+E:\A-New-Chapter\obj\Debug\A New Chapter.csproj.CoreCompileInputs.cache
+E:\A-New-Chapter\obj\Debug\A New Chapter.csproj.CopyComplete
+E:\A-New-Chapter\obj\Debug\A New Chapter.dll
+E:\A-New-Chapter\obj\Debug\A New Chapter.pdb

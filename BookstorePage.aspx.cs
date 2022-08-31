@@ -96,7 +96,6 @@ namespace A_New_Chapter
                 {
                     con.Open();
                 }
-
                 SqlCommand cmd1 = new SqlCommand("select * from master_book_table where book_id='" + _bookId + "'", con);
                 SqlDataReader dr = cmd1.ExecuteReader();
                 if (dr.HasRows)
@@ -422,13 +421,17 @@ namespace A_New_Chapter
                 {
                     con.Open();
                 }
-                SqlCommand cmd2 = new SqlCommand("insert into sold_book_record(book_id, book_name, book_price, user_name,  book_image, book_description,paid,isShelved) values(@book_id, @book_name, @book_price, @user_name, @book_image, @book_description,@paid,@isShelved)", con);
+                Random rndm = new Random();
+                int num1 = rndm.Next(10000,100000);
+                int num2 = rndm.Next(10000, 100000);
+                SqlCommand cmd2 = new SqlCommand("insert into sold_book_record(book_id, book_name, book_price, user_name,  book_image, book_description,ID,paid,isShelved) values(@book_id, @book_name, @book_price, @user_name, @book_image, @book_description,@ID,@paid,@isShelved)", con);
                 cmd2.Parameters.AddWithValue("@book_id", _bookId);
                 cmd2.Parameters.AddWithValue("@book_name", _bookName);
                 cmd2.Parameters.AddWithValue("@book_price", _bookPrice);
                 cmd2.Parameters.AddWithValue("@user_name", Session["user_name"]);
                 cmd2.Parameters.AddWithValue("@book_image", _bookImage);
                 cmd2.Parameters.AddWithValue("@book_description", _bookDescription);
+                cmd2.Parameters.AddWithValue("@ID",num1+num2);
                 cmd2.Parameters.AddWithValue("@paid", 0);
                 cmd2.Parameters.AddWithValue("@isShelved", _isShelved);//this will directly shelve the book
                 cmd2.ExecuteNonQuery();
