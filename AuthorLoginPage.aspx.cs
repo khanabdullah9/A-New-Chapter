@@ -43,7 +43,7 @@ namespace A_New_Chapter
                                 {
                                     while (dr.Read())
                                     {
-                                       string  _status = dr.GetString(11);
+                                       string  _status = dr.GetString(10);
                                         if (_status.Equals("block"))
                                         {
                                             Response.Write("<script>alert('You have been blocked');</script>");

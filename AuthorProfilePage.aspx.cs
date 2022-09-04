@@ -61,9 +61,15 @@ namespace A_New_Chapter
                                 {
                                     Image1.Visible = true;
                                     byte[] imageData = (byte[])dr["image"];
-                                    string img = Convert.ToBase64String(imageData, 0, imageData.Length);//convert byte array to base 64 string
-                                    Image1.ImageUrl = "data:image/png;base64," + img;//setting the image url
-
+                                    if (imageData != null)
+                                    {
+                                        string img = Convert.ToBase64String(imageData, 0, imageData.Length);//convert byte array to base 64 string
+                                        Image1.ImageUrl = "data:image/png;base64," + img;//setting the image url
+                                    }
+                                    else 
+                                    {
+                                        Image1.ImageUrl = null;
+                                    }
                                     Label5.Text = dr["full_name"].ToString();
                                     Label6.Text = dr["reputation_points"].ToString();
                                     Label7.Text = dr["email"].ToString();
